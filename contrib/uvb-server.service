@@ -1,0 +1,7 @@
+[Unit]
+Description=Ultimate Victory Battle Server
+After=network.target
+
+[Service]
+Environment=PORT=8000
+ExecStart=/bin/uvb-server $PORT

@@ -33,6 +33,7 @@ release:
 
 install:
 	install -D $(EXECUTABLE) $(PREFIX)/bin/$(EXECUTABLE)
+	install contrib/uvb-server.service $(DESTDIR)/usr/lib/systemd/system/
 
 clean:
 	$(RM) $(EXECUTABLE) counters.db names.db
